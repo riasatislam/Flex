@@ -2,7 +2,7 @@
 
 The minimalist [Pelican](http://blog.getpelican.com/) theme.
 
-##   Note
+## Note
 
 DON'T send any questions, issues or anything related to Flex to my personal email. They will be IGNORED by now. Your question maybe also is someone else's question. They SHOULD be public, so others can know how to fix configuration problems.
 
@@ -59,13 +59,7 @@ As always, if you want something that only make sense to you, just fork Flex and
 
 Are you using this theme? Support bug fixes and new features.
 
-**PayPal** - [Click Here](http://bit.ly/flex-paypal)
-
-**BTC** - `1FoywLAteGB8SnoCnGxQn7dmmHsNss79mR`
-
-**ETH** - `0x433f1344e75fccb63a6f59fd8449b31a0022c62c`
-
-**DOGE** - `DNcP5Cq6z4qnrY2d7tfZQzM8wBupzBwDkb`
+[Click here](https://www.alexandrevicenzi.com/donate) to donate.
 
 ## Live example
 
@@ -77,7 +71,7 @@ The code is available in this project inside `docs` folder.
 
 Translate this theme to new languages at [Transifex](https://www.transifex.com/alexandrevicenzi/flex-pelican/).
 
-![Translations](https://github.com/alexandrevicenzi/Flex/blob/master/translation_chart.png)
+![Translations](https://github.com/alexandrevicenzi/Flex/blob/master/translations/translation_chart.png)
 
 Read more about [Translation Support](https://github.com/alexandrevicenzi/Flex/wiki/Translations).
 

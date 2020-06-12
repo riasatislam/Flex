@@ -17,7 +17,9 @@
     <meta name="robots" content="{{ ROBOTS }}" />
   {% endif %}
 
-  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+  {% if USE_GOOGLE_FONTS != False %}
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  {% endif %}
 
   {% if USE_LESS %}
     <link rel="stylesheet/less" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/style.less">
@@ -28,8 +30,6 @@
 
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/pygments/{{ PYGMENTS_STYLE|default('github') }}.min.css">
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/academicons/css/academicons.min.css">
-      
 
   {% if CUSTOM_CSS %}
     <link href="{{ SITEURL }}/{{ CUSTOM_CSS }}" rel="stylesheet">
@@ -119,17 +119,11 @@
       </nav>
       {% endif %}
 
-
       <ul class="social">
-        {% for name, link in ACADEMIC_SOCIAL %}
-        <li><a class="sc-{{ name }}" href="{{ link }}" target="_blank"><i class="ai ai-{{ name }}"></i></a></li>
-        {% endfor %}
- 
         {% for name, link in SOCIAL %}
         <li><a class="sc-{{ name }}" href="{{ link }}" target="_blank"><i class="fa fa-{{ name }}"></i></a></li>
         {% endfor %}
       </ul>
-
     </div>
 
     {% if GOOGLE_ADSENSE and GOOGLE_ADSENSE.ads.aside %}
@@ -163,7 +157,7 @@
       {% endfor %}
 
       {% if FEED_ALL_ATOM %}
-      <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">{{ _('Subscribe') }}</a>
+      <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">{{ _('Atom') }}</a>
       {% endif %}
 
       {% if FEED_ALL_RSS %}
