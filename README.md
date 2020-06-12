@@ -2,7 +2,7 @@
 
 The minimalist [Pelican](http://blog.getpelican.com/) theme.
 
-## Note
+##   Note
 
 DON'T send any questions, issues or anything related to Flex to my personal email. They will be IGNORED by now. Your question maybe also is someone else's question. They SHOULD be public, so others can know how to fix configuration problems.
 
